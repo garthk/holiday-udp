@@ -15,6 +15,13 @@ Fires frames at the UDP-based [secret API] of
     // fill frame with [r, g, b] values, each 0..value..255
     holiday.send(frame);
 
+## Lazy Usage
+
+If you just want to see see it work:
+
+    npm install -g holiday-udp
+    holiday-xmas 192.168.23.254 &
+
 ## API
 
 `Holiday.send` takes two arguments:
@@ -34,4 +41,4 @@ but it doesn't.
 Once you've found your Holiday, try `bin/thrash.js`. If it works and you're
 into red, white, and green themed holidays at the end of the year, try
 `bin/xmas.js`. The latter has a simple animation module hiding in it, waiting
-to be broken out. 
+to be broken out.

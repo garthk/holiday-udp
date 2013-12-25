@@ -1,13 +1,13 @@
 {
   "name": "holiday-udp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Sends frames to the MooresCloud Holiday UDP API",
   "main": "lib/index.js",
   "bin": {
     "holiday-thrash": "bin/thrash.js",
     "holiday-xmas": "bin/xmas.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "optimist": "~0.6.0"    
   },
   "scripts": {
