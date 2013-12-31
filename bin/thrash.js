@@ -19,11 +19,11 @@ var address = argv._[0],
 console.log(util.format('spamming %s', address));
 
 function randomGlobe() {
-    return Math.round(Math.random() * 49);
+    return Math.floor(Math.random() * 50);
 }
 
 function randomByteValue() {
-    return Math.round(Math.random() * 256);
+    return Math.floor(Math.random() * 256);
 }
 
 function randomColour() {
