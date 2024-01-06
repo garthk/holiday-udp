@@ -1,14 +1,15 @@
 {
   "name": "holiday-udp",
-  "version": "0.1.2",
+  "version": "2.0.0",
   "description": "Sends frames to the MooresCloud Holiday UDP API",
+  "type": "module",
   "main": "lib/index.js",
   "bin": {
     "holiday-thrash": "bin/thrash.js",
     "holiday-xmas": "bin/xmas.js"
   },
-  "dependencies": {
-    "optimist": "~0.6.0"    
+  "devDependencies": {
+    "optimist": "~0.6.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +24,10 @@
     "udp"
   ],
   "author": "Garth Kidd",
+  "contributors": [
+    "@jeamland",
+    "@mountainash"
+  ],
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/garthk/holiday-udp/issues"

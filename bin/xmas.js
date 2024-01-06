@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 
-var Holiday = require('../lib/'),
-    util = require('util'),
-    optimist = require('optimist')
-        .usage('Usage: $0 [options] address')
-        .options('h', { alias: 'help', boolean: true, describe: 'Help' });
-    argv = optimist.argv;
+import Holiday from '../lib/index.js';
+import util from 'node:util';
+import optimist from 'optimist';
+
+const argv = optimist.argv;
+
+optimist.usage('Usage: $0 [options] address')
+        .options('h', { alias: 'help', describe: 'Help' });
 
 if (argv._.length !== 1 || argv.help) {
     optimist.showHelp();
@@ -13,7 +15,7 @@ if (argv._.length !== 1 || argv.help) {
 }
 
 // A simple sprite: a span of colour with a position along the string of
-// globes and a per-frame velocity. 
+// globes and a per-frame velocity.
 function MovingSpan(colour, width, velocity) {
     this.offset = 0;
     this.colour = colour;
@@ -26,7 +28,7 @@ MovingSpan.prototype.paint = function(frame) {
         end = begin + this.width;
     for (var pos = begin; pos < end; pos++) {
         var idx = pos % 50;
-        if (idx < 0) { 
+        if (idx < 0) {
             idx += 50;
         }
         frame[idx] = this.colour;
