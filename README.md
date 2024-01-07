@@ -34,4 +34,4 @@ If `callback` isn't supplied and an error occurs (e.g. `getaddrinfo ENOTFOUND`),
 
 ## Testing
 
-Once you've found your Holiday, try `node bin/thrash.js <HOLIDAY IP> &`. If it works and you're into red, white, and green themed holidays at the end of the year, try `node bin/xmas.js <HOLIDAY IP> &`. The latter has a simple animation module hiding in it, waiting to be broken out.
+Once you've found your Holiday, try `node bin/thrash.js <HOLIDAY IP>`. If it works and you're into red, white, and green themed holidays at the end of the year, try `node bin/xmas.js <HOLIDAY IP>`. The latter has a simple animation module hiding in it, waiting to be broken out.
