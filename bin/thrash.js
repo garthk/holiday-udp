@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 
-var Holiday = require('../lib/'),
-    util = require('util'),
-    optimist = require('optimist')
-        .usage('Usage: $0 [options] address')
-        .options('h', { alias: 'help', boolean: true, describe: 'Help' });
-    argv = optimist.argv;
+import Holiday from '../lib/index.js';
+import util from 'node:util';
+import optimist from 'optimist';
+
+const argv = optimist.argv;
+
+optimist.usage('Usage: $0 [options] address')
+        .options('h', { alias: 'help', describe: 'Help' });
 
 if (argv._.length !== 1 || argv.help) {
     optimist.showHelp();
