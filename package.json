@@ -8,6 +8,10 @@
     "holiday-thrash": "bin/thrash.js",
     "holiday-xmas": "bin/xmas.js"
   },
+  "engines": {
+    "node": ">= 5.10.0",
+    "npm": ">= 3"
+  },
   "devDependencies": {
     "optimist": "~0.6.0"
   },
